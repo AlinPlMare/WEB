@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(5, 5, 15);
+}
+#header{
+    position: relative;
+    height: 200px;
+    display: none;
+    background-color: orange;
+    z-index: +2;
+}
+#nav{
+    background-color: rgb(5, 5, 15);
+    box-shadow: 1px 4px 10px 2px rgb(48, 48, 48);
+    z-index: +9;
+    display: none;
+    z-index: +9;
+}
+footer{
+    position: relative;
+    display: none;
+    height: 100px;
+    border: solid white 1px;
+    outline: solid rgb(190, 190, 190) 1px;
+}
+#title{
+    position: absolute;
+    left: 40%;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    margin-top: 100px;
+    color: red;
+}
+#lineOne{
+    background-image: url("/assets/line.jpg");
+    border-right: solid 3px rgb(74, 41, 0);
+    display: none;
+    z-index: +1;
+}
+#lineTwo{
+    background-image: url("/assets/line.jpg");
+    border-left: solid 3px rgb(74, 41, 0);
+    display: none;
+    z-index: +1;
+}
+#txt{
+    display: none;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    height: 1000px;
+}
+#GO{
+    z-index: +9;
+    border: solid rgb(90, 42, 0) 2px;
+    border-radius: 10px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(90, 42, 0);
+    padding-block: 5px;
+    padding-inline: 15px;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    background-color: rgba(172, 102, 26, 0.945);
+}
+#GO:hover{
+    transform: scale(0.95);
+    background-color: rgba(172, 101, 26, 0.825);
+    border-radius: 12px;
+}
+#GO:active{
+    transform: scale(0.85);
+    border-radius: 15px;
+}
+#brand{
+    border: solid white 2px;
+    border-radius: 10px;
+    padding-inline: 5px;
+}
+#li1{
+    border: solid rgb(90, 42, 0) 2px;
+    border-radius: 10px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(90, 42, 0);
+    margin-inline-end: 15px;
+    margin-inline-start: 100px;
+    display: block;
+    background-image: url("/assets/dawdawdawdawd.png");
+}
+#li1:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#li{
+    border: solid rgb(90, 42, 0) 2px;
+    border-radius: 10px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(90, 42, 0);
+    margin-inline-end: 15px;
+    display: block;
+    background-image: url("/assets/dawdawdawdawd.png");
+}
+#li:hover{
+    transform: scale(0.95);
+    border-radius: 12px;
+}
+#li:active{
+    transform: scale(0.85);
+}
+#bt1{
+    color: orange;
+}
+#bt2{
+    color: orange;
+}
+#bt1:hover{
+    color: rgb(255, 132, 0);
+}
+@keyframes pulse{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+#bt2:hover{
+    color: rgb(255, 132, 0);
+}
+#liMenu{
+    border: solid rgb(90, 42, 0) 2px;
+    border-radius: 10px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(90, 42, 0);
+    margin-inline-end: 15px;
+    display: none;
+    background-image: url("/assets/dawdawdawdawd.png");
+}
+#liMenu:hover{
+    transform: scale(0.95);
+    border-radius: 12px;
+}
+#liMenu:active{
+    transform: scale(0.85);
+}
+#bt3{
+    color: orange;
+}
+#bt3:hover{
+    color: rgb(255, 132, 0);
+}
+#navS{
+    display: none;
+    position: absolute;
+}
+#lii{
+    list-style: none;
+}
+#bt11{
+    display: none;
+    color: transparent;
+}
+#bt21{
+    display: none;
+    color: transparent;
+}
+#bt21:hover{
+    color: rgb(255, 132, 0);
+}
+#inf{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 25px solid red;   
+    z-index: +9;
+    position: absolute;
+    display: none;
+}
+#infp{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+    z-index: +9;
+    margin-top: 25px;
+    display: none;
+}
+#info{
+    color: blue;
+}
+@media only screen and (max-width: 768px) {
+    #lineOne{
+        position: absolute;
+        height: 0px;
+    }
+    #lineTwo{
+        position: absolute;
+        height: 0px;
+    }
+    #li1{
+        display: none;
+    }
+    #li{
+        display: none;
+    }
+    #liMenu{
+        display: block;
+    }
+    #navS{
+        position: sticky;
+        height: 120px;
+        border: solid rgb(140, 87, 18) 2px;
+        box-shadow: 0px 5px 15px 1px rgb(84, 54, 14);
+        animation-name: none;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes navSOpen{
+        from{height: 0px;}
+        to{height: 120px;}
+    }
+    @keyframes navSClose{
+        from{height: 120px;}
+        to{height: 0px;}
+    }
+    #bt11{
+        margin-top: 25px;
+        margin-block-end: 15px;
+        padding-inline: 40%;
+        height: auto;
+        border: solid rgb(90, 42, 0) 2px;
+        border-radius: 7px;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: rgb(90, 42, 0);
+        background-image: url("/assets/dawdawdawdawd.png");
+        text-decoration-line: none;
+        color: orange;
+    }
+    #bt11:hover{
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        color: rgb(255, 132, 0);
+    }
+    #bt21{
+        padding-inline: 40%;
+        height: auto;
+        border: solid rgb(90, 42, 0) 2px;
+        border-radius: 7px;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: rgb(90, 42, 0);
+        background-image: url("/assets/dawdawdawdawd.png");
+        list-style: none;
+        text-decoration-line: none;
+        color: orange;
+    }
+    #bt21:hover{
+        transform: scaleX(0.98);
+        color: rgb(255, 132, 0);
+    }
+    #bt21:active{
+        transform: scale(0.97);
+    }
+    #ulS{
+        animation-name: none;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes ulSOpen{
+        from{transform: translateY(-120px);}
+        to{transform: translateY(0px);}
+    }
+    @keyframes ulSClose{
+        from{transform: translateY(0px);}
+        to{transform: translateY(-120px);}
+    }
+}
+  
